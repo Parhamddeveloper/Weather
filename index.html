@@ -4,9 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App By Parham Daneshnejad</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-    
+    <div class="Container">
+        <div class="SearchBox">
+            <i class="bi bi-geo-alt-fill"></i>
+            <input type="text" placeholder="Please Enter Your Location" class="Input">
+            <button><i class="bi bi-search"></i></button>
+        </div>
+        <div class="NotFound">
+            <img src="IMG/404.png" class="NotImg" alt="We don't found your location" width="450">
+            <p>Invalid Location!</p>
+        </div>
+        <div class="WeatherBox">
+            <p></p>
+            <img src="" alt="">
+            <p class="Temperature"></p>
+            <p class="Description"></p>
+        </div>  
+        <div class="WeatherDetails">
+            <div class="Humidity">
+                <i class="bi bi-water"></i>
+                <div class="Text">
+                    <span></span>
+                    <p>Humidity</p>
+                </div>
+            </div>
+            <div class="Wind">
+                <i class="bi bi-wind"></i>
+                <div class="Text">
+                    <span></span>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="JS/index.js"></script>
 </body>
 </html>

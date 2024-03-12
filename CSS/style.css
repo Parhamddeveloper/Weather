@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: rgb(27, 32, 66);
+    justify-content: center;
+}
+
+.Container {
+    position: relative;
+    width: 400px;
+    height: 105px;
+    background-color: white;
+    padding: 28px 32px;
+    overflow: hidden;
+    border-radius: 18px;
+    transition: 0.6s;
+}
+
+.SearchBox {
+    width: 100%;
+    height: min-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.SearchBox input {
+    margin-left: 10px;
+    color: rgb(50, 30, 30);
+    width: 88%;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.SearchBox input::placeholder {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(100, 58, 58);
+    text-transform: capitalize;
+}
+
+.SearchBox button {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    color: rgb(50, 30, 30);
+    background-color: rgb(230, 249, 249);
+    border-radius: 50%;
+    font-size: 19px;
+    transition: 0.4s ease;
+}
+
+.SearchBox button:hover {
+    color: white;
+    background: rgb(100, 58, 58);
+
+}
+
+.SearchBox i {
+    color: rgb(50, 30, 30);
+    font-size: 22px;
+}
+
+.WeatherBox {
+    text-align: center;
+}
+
+.WeatherBox img {
+    width: 60%;
+    margin-top: 30px;
+}
+
+.WeatherBox .Temperature {
+    position: relative;
+    color: rgb(50, 30, 30);
+    font-size: 4rem;
+    font-weight: 800;
+    margin-top: 30px;
+    margin-left: -16px;
+}
+
+.WeatherBox .Temperature span {
+    position: absolute;
+    margin-left: 4px;
+    font-size: 1.5rem;
+}
+
+.WeatherBox .Description {
+    color: rgb(50, 30, 30);
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.WeatherDetails {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.WeatherDetails .Humidity,
+.WeatherDetails .Wind {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100px;
+}
+
+.WeatherDetails .Humidity {
+    padding-left: 20px;
+    justify-content: flex-start;
+}
+
+.WeatherDetails .WindP {
+    padding-right: 20px;
+    justify-content: flex-end;
+}
+
+.WeatherDetails {
+    color: rgb(50, 30, 30);
+    font-size: 25px;
+    margin-right: 10px;
+    margin-top: 6px;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.WeatherDetails span {
+    color: rgb(50, 30, 30);
+    font-size: 22px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+.WeatherDetails p{
+    margin-left: 10px;
+
+}
+.WeatherDetails {
+    color: rgb(50, 30, 30);
+    font-size: 14px;
+    font-weight: 500;
+}
+.WeatherDetails i{
+    font-size: 20px;
+}
+.NotFound {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    scale: 0;
+    opacity: 0;
+    display: none;
+}
+
+.NotFound img {
+    width: 70%;
+}
+
+.NotFound p {
+    color: rgb(50, 30, 30);
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 12px;
+}
+
+.WeatherBox,
+.WeatherDetails {
+    scale: 0;
+    opacity: 0;
+}
+
+.FadeIn {
+    animation: FadeIn 0.5s forwards;
+    animation-delay: 0.5s;
+}
+
+.Opacity {
+    opacity: 1;
+    scale: 1;
+}
+
+@keyframes FadeIn {
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+}
